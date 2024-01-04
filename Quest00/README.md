@@ -96,11 +96,14 @@
 
   - git revert 사용하기<br>
     revert 명령어를 사용하는 방식은 커밋기록을 삭제하는 것이 아닌 “커밋의 변경사항을 되돌린다”는 커밋을 만들어 주는 방식이다.<br>
-    $ git revert [해당커밋해시값] <br>
+    $ git revert [해당커밋해시값]
+    
     --no-commit 옵션을 사용해 커밋을 남기지 않고 revert를 쌓을 수 있다.
 
-    또 HEAD~n..을 붙여주어 한번에 여러개의 커밋에 대해 revert를 실행시킬 수 있다.<br>
+    또 HEAD~n..을 붙여주어 한번에 여러개의 커밋에 대해 revert를 실행시킬 수 있다.
+
     $ git revert --no-commit HEAD~3..
+
 ## Quest
 * GitHub에 가입한 뒤, [이 커리큘럼의 GitHub 저장소](https://github.com/KnowRe-Dev/WebDevCurriculum)의 우상단의 Fork 버튼을 눌러 자신의 저장소에 복사해 둡니다.
 * Windows의 경우 같이 설치된 git shell을, MacOSX의 경우 터미널을 실행시켜 커맨드라인에 들어간 뒤, 명령어를 이용하여 복사한 저장소를 clone합니다.
