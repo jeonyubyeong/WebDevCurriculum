@@ -1,3 +1,9 @@
 {
-    "name": "esm-package"
+    "name": "esm-package",
+    "exports": {
+        ".": {
+            "require": "./index.mjs",
+            "import": "./index.mjs"
+        }
+    }
 }
